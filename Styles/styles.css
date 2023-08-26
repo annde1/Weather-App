@@ -1,0 +1,70 @@
+/* s */
+body {
+  margin: 1px;
+  background: linear-gradient(
+    109.6deg,
+    rgba(119, 44, 232, 0.68) 11.5%,
+    rgb(119, 44, 232) 91.2%
+  );
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 100;
+  color: white;
+}
+.date-container {
+  font-size: 1.8em;
+}
+.current-location {
+  font-size: 1.8em;
+}
+.weather-info {
+  background-color: rgba(29, 29, 31, 0.5);
+  padding: 1em;
+  border-radius: 20px;
+  border: 1px solid white;
+  font-size: 1.3em;
+  width: 20em;
+  padding: 2em;
+}
+.day-of-weak {
+  text-align: center;
+  background-color: rgba(29, 29, 31, 0.5);
+  border-radius: 35px;
+  padding: 0.6em 0;
+}
+.day-icon-container {
+  display: flex;
+  flex-direction: column;
+}
+.weather-icon {
+  width: 6em;
+  height: 6em;
+  margin-left: 4.5em;
+}
+.location {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+.desctiption {
+  text-align: center;
+}
+.form-control {
+  margin-right: 0.5em;
+}
+@media screen and (max-width: 510px) {
+  .weather-info {
+    background-color: rgba(29, 29, 31, 0.5);
+    padding: 1em;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-size: 1.3em;
+    width: 15em;
+    padding: 2em;
+  }
+}
+@media screen and (max-width: 354px) {
+  .weather-info {
+    width: 13em;
+  }
+}
