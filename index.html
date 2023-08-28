@@ -17,7 +17,8 @@
     />
   </head>
   <body>
-    <div class="container d-flex justify-content-center flex-column align-items-center">
+    <div class="container-fluid d-flex justify-content-center flex-column align-items-center">
+      <div class="wrapper">
         <div class="search-bar-container mt-3">
             <div class="input-group rounded col-auto">
             <input type="search" class="form-control rounded " placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="search-input" />
@@ -29,18 +30,18 @@
 
         <div class="current-information">
 
-          <div class="date-container mt-4 mb-4 d-flex flex-row justify-content-around">
-            <div class="curren-date" id="date">Saturday, 26 Aug</div>
+          <div class="date-container mt-4 mb-4 d-flex flex-column justify-content-around">
+            <div class="current-date" id="date"></div>
             <div class="time" id="time"></div>
           </div>
           
           <div class="weather-info mt-3">
 
             <div class="day-icon-container">
-                <div class="location mt-2" id="city-name">Tel -Aviv</div>
-                <div class="day-of-weak" id="day-of-weak">Saturday</div>
+                <div class="location mt-2" id="city-name"></div>
+                <div class="day-of-weak" id="day-of-weak"></div>
                 <img src=" https://openweathermap.org/img/wn/10d@2x.png"alt="weather icon"class="weather-icon"id="weather-icon"/>
-                <div class="mb-5 desctiption"id="desciption">Partly Cloudly</div>
+                <div class="mb-5 desctiption"id="desciption"></div>
             </div>
    
             <div class="weather-info-item d-flex justify-content-between">
@@ -83,6 +84,8 @@
           </div>
         </div>
       </div>
+      </div>
+        
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
