@@ -10,18 +10,11 @@ body {
   background-repeat: no-repeat;
   font-weight: 100;
   color: white;
+  height: 100%;
 }
-.wrapper {
-  height: 100vh;
-}
-.date-container {
-  font-size: 1.8em;
-}
-.current-location {
-  font-size: 1.8em;
-}
+
 .weather-info {
-  background-color: rgba(29, 29, 31, 0.5);
+  background-color: rgba(26, 26, 30, 0.5);
   padding: 1em;
   border-radius: 20px;
   border: 1px solid white;
@@ -73,18 +66,132 @@ body {
     border-radius: 20px;
     border: 1px solid white;
     font-size: 1.3em;
-    width: 15em;
+    width: 18em;
     padding: 2em;
-    margin-left: 1em;
   }
   .weather-icon {
     width: 6rem;
     height: 6rem;
     margin-left: 4.5rem;
   }
+
+  .current-date,
+  .time {
+    font-size: 2rem;
+  }
 }
-@media screen and (max-width: 354px) {
+@media screen and (max-width: 428px) {
   .weather-info {
+    background-color: rgba(29, 29, 31, 0.5);
+    padding: 1em;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-size: 1.3em;
+    width: 16em;
+    padding: 2em;
+  }
+  .weather-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  .location {
+    font-size: 2rem;
+  }
+  .day-of-weak {
+    font-size: 1.2rem;
+  }
+  .current-date,
+  .time {
+    font-size: 1.8rem;
+  }
+  .weather-info-item {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 366px) {
+  .weather-info {
+    background-color: rgba(29, 29, 31, 0.5);
+    padding: 1em;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-size: 1.3em;
+    width: 15em;
+    padding: 1.5em;
+  }
+  .weather-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  .location {
+    font-size: 1.8rem;
+  }
+  .day-of-weak {
+    font-size: 1.1rem;
+    padding: 0.4em 0;
+  }
+  .current-date,
+  .time {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .weather-info {
+    background-color: rgba(29, 29, 31, 0.5);
+    padding: 1em;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-size: 1.3em;
     width: 13em;
+    padding: 1.5em;
+  }
+  .weather-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  .location {
+    font-size: 1.7rem;
+  }
+  .day-of-weak {
+    font-size: 1rem;
+    padding: 0.4em 0;
+  }
+  .current-date,
+  .time {
+    font-size: 1.5rem;
+  }
+  .weather-info-item {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 296px) {
+  .weather-info {
+    background-color: rgba(29, 29, 31, 0.5);
+    padding: 1em;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-size: 1.3em;
+    width: 12em;
+    padding: 1.5em;
+  }
+  .weather-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .location {
+    font-size: 1.5rem;
+  }
+  .day-of-weak {
+    font-size: 1rem;
+    padding: 0.4em 0;
+  }
+  .current-date,
+  .time {
+    font-size: 1.3rem;
+  }
+  .weather-info-item {
+    font-size: 1rem;
+  }
+  .desctiption {
+    font-size: 1.1rem;
   }
 }
