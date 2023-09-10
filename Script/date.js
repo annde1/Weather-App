@@ -1,5 +1,9 @@
+//Variable to store the current time
 let now;
 
+//Functions:
+
+//Function addZero returns a string with an edded 0 to the begining of it if the number passed in the function call is < 10
 const addZero = (num) => {
   if (num < 10) {
     return `0${num}`;
@@ -7,6 +11,8 @@ const addZero = (num) => {
     return num;
   }
 };
+
+//Function displayTime displays time immediately and rerenders the clock every second (set interval)
 const displayTime = () => {
   now = new Date();
   const hour = now.getHours();
@@ -15,6 +21,7 @@ const displayTime = () => {
   clock.innerHTML = `${hour} : ${addZero(minutes)}`;
 };
 
+//Function getDate returns and object with dayOfMonth, dayName and month name so the date will be displayed as text and not as number
 const getDate = () => {
   let obj;
   now = new Date();
@@ -51,18 +58,17 @@ const getDate = () => {
     dayName,
     monthName,
   };
-  console.log(obj);
   return obj;
 };
 
-const updateDate = (obj) => {
+//Function renderDate updates the html of the date to current date. It takes an object with date information (returned from getDate function) as an argument.
+const renderDate = (obj) => {
   const dateElement = document.querySelector("#date");
   const day = document.querySelector("#day-of-weak");
-  console.log(day);
   dateElement.innerHTML = `${obj.dayName}, ${obj.dayOfMonth} ${obj.monthName}`;
   day.innerHTML = obj.dayName;
 };
-getDate();
+
 export { displayTime };
 export { getDate };
-export { updateDate };
+export { renderDate };

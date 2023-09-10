@@ -1,17 +1,16 @@
-//API_KEY = "7a57e0eb094bf63e8e3fef9c28de69bd";
-//https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 class Weather {
   constructor(apiKey, city) {
     this.apiKey = apiKey;
     this.city = city;
   }
+  //Method fetchWeatherByCity is an async method that makes an api call to get current weather based by the city name that user requested or by default city
   async fetchWeatherByCity() {
     try {
       let data = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${this.apiKey}&units=metric`
       );
-      console.log(data);
       let actualData = await data.json();
+
       return actualData;
     } catch (err) {
       console.log(err);
@@ -19,7 +18,8 @@ class Weather {
   }
 }
 
-const updateWeatherData = (
+//Function renderWeatherData renders weather data returned from the async function fetchWeatherByCity
+const renderWeatherData = (
   city,
   temp,
   feelsLike,
@@ -41,8 +41,6 @@ const updateWeatherData = (
   const humidityElm = document.querySelector("#humidity");
   const pressureElm = document.querySelector("#pressure");
   const windElm = document.querySelector("#wind-speed");
-  const sunriseElm = document.querySelector("#sunrise");
-  const sunsetELm = document.querySelector("#sunset");
 
   cityName.innerText = city;
   iconElm.setAttribute("src", `https://openweathermap.org/img/wn/${icon}.png`);
@@ -57,4 +55,4 @@ const updateWeatherData = (
 };
 
 export { Weather };
-export { updateWeatherData };
+export { renderWeatherData };
