@@ -20,10 +20,9 @@ Sweather is a minimalistic weather app that allows users to quickly check the we
 ## Usage
 
 1. Clone this repository to your local machine.
-2. Open the `index.html` file in your web browser.
+2. Open the `index.html` file in your web browser using live server.
 3. By default, weather data for New York is displayed. You can enter the name of a different city in the search bar and press Enter to get the current weather data for that city.
 4. The app will display the weather information, including temperature, conditions, and more.
-
 
 ## Credits
 
@@ -32,5 +31,3 @@ Sweather is a minimalistic weather app that allows users to quickly check the we
 ## Author
 
 - [Anna Depta]
-
-
